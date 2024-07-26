@@ -32,14 +32,13 @@
 
 # Pasos Iniciales
 
-    ## Diseño:
-       - Crear wireframes y prototipos de la app.
-       -  Diseñar la interfaz de usuario siguiendo las directrices de Material Design.
+## Diseño:
+- Crear wireframes y prototipos de la app.
+-  Diseñar la interfaz de usuario siguiendo las directrices de Material Design.
 
-    ## Desarrollo:
-        Configurar el entorno de desarrollo.
-        Implementar funcionalidades básicas primero y luego añadir características adicionales.
+## Desarrollo:
+- Implementar funcionalidades básicas primero y luego añadir características adicionales.
 
-    ## Lanzamiento:
-        Preparar la app para su lanzamiento en Google Play Store.
-        Promocionar la app a través de diferentes canales y recolectar opiniones de los usuarios para futuras mejoras.
+## Lanzamiento:
+- Preparar la app para su lanzamiento en Google Play Store.
+- Promocionar la app a través de diferentes canales y recolectar opiniones de los usuarios para futuras mejoras.
