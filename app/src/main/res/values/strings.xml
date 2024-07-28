@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ClassOrganizer</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="seleccione_un_rol">Seleccione un rol.</string>
+    <string name="la_password_ha_de_contener_al_menos_6_caracteres">La Password ha de contener al menos 6 caracteres.</string>
+    <string name="campo_obligatoria">Campo obligatorio</string>
+    <string name="campo_obligatorio" />
 </resources>

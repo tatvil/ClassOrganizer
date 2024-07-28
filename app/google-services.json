@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "21450508291",
+    "project_id": "classmanager-29fa7",
+    "storage_bucket": "classmanager-29fa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21450508291:android:1a4e0fc664e0cb788a6636",
+        "android_client_info": {
+          "package_name": "es.tatvil.classorganizer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJGzDZMOtzVinIwAWIJu2gOPsJ8C9Nv8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
