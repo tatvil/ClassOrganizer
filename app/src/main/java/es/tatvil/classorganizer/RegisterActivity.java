@@ -95,9 +95,9 @@ public class RegisterActivity extends AppCompatActivity {
                             String userId = mAuth.getCurrentUser().getUid();
                             Persona user;
                             if ("student".equals(role)) {
-                                user = new Alumno(nombre, apellido1, apellido2, new Date(), dni, telefono, email, direccion, codigoPostal, new Localidad());
+                                user = new Alumno(userId, nombre, apellido1, apellido2, new Date(), dni, telefono, email, direccion, codigoPostal, new Localidad());
                             } else {
-                                user = new Profesor(nombre, apellido1, apellido2, new Date(), dni, telefono, email, direccion, codigoPostal, new Localidad());
+                                user = new Profesor(userId,nombre, apellido1, apellido2, new Date(), dni, telefono, email, direccion, codigoPostal, new Localidad());
                             }
                             db.collection("users").document(userId).set(user)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {

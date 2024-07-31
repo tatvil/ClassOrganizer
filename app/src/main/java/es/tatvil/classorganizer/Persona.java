@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Persona {
+    private String uid;
     private String nombre;
     private String apellido1;
     private String apellido2;
@@ -15,7 +16,8 @@ public class Persona {
     private String codigoPostal;
     private Localidad localidad;
 
-    public Persona(String nombre, String apellido1, String apellido2, Date fechaNacimiento, String dni, String telefono, String email, String direccion, String codigoPostal, Localidad localidad) {
+    public Persona(String uid, String nombre, String apellido1, String apellido2, Date fechaNacimiento, String dni, String telefono, String email, String direccion, String codigoPostal, Localidad localidad) {
+        this.uid = uid;
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.apellido2 = apellido2;
@@ -31,15 +33,25 @@ public class Persona {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Persona)) return false;
         Persona persona = (Persona) o;
-        return Objects.equals(nombre, persona.nombre) && Objects.equals(apellido1, persona.apellido1) && Objects.equals(apellido2, persona.apellido2) && Objects.equals(fechaNacimiento, persona.fechaNacimiento) && Objects.equals(dni, persona.dni) && Objects.equals(telefono, persona.telefono) && Objects.equals(email, persona.email) && Objects.equals(direccion, persona.direccion) && Objects.equals(codigoPostal, persona.codigoPostal) && Objects.equals(localidad, persona.localidad);
+        return Objects.equals(nombre, persona.nombre) &&
+                Objects.equals(apellido1, persona.apellido1) &&
+                Objects.equals(apellido2, persona.apellido2) &&
+                Objects.equals(fechaNacimiento, persona.fechaNacimiento) &&
+                Objects.equals(dni, persona.dni) &&
+                Objects.equals(telefono, persona.telefono) &&
+                Objects.equals(email, persona.email) &&
+                Objects.equals(direccion, persona.direccion) &&
+                Objects.equals(codigoPostal, persona.codigoPostal) &&
+                Objects.equals(localidad, persona.localidad);
     }
 
     @Override
     public String toString() {
         return "Persona{" +
-                "nombre='" + nombre + '\'' +
+                "uid=" + uid + '\'' +
+                ", nombre='" + nombre + '\'' +
                 ", apellido1='" + apellido1 + '\'' +
                 ", apellido2='" + apellido2 + '\'' +
                 ", fechaNacimiento=" + fechaNacimiento +
@@ -54,7 +66,15 @@ public class Persona {
 
     @Override
     public int hashCode() {
-        return Objects.hash(nombre, apellido1, apellido2, fechaNacimiento, dni, telefono, email, direccion, codigoPostal, localidad);
+        return Objects.hash(uid, nombre, apellido1, apellido2, fechaNacimiento, dni, telefono, email, direccion, codigoPostal, localidad);
+        }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public String getNombre() {
@@ -136,4 +156,5 @@ public class Persona {
     public void setLocalidad(Localidad localidad) {
         this.localidad = localidad;
     }
+
 }

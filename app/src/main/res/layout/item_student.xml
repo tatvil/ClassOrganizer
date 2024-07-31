@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:layout_marginEnd="8dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvApellido1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido1"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvApellido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido2"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/studentCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"/>
+</LinearLayout>
